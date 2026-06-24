@@ -3,7 +3,7 @@ dashed_word = '_' * word_to_guess.length
 puts(dashed_word)
 
 loop do
-  puts "Type a character to guess: "
+  print "Type a character to guess: "
   character = gets.chomp
   if word_to_guess.include? character
     word_to_guess.each_char.with_index do |char, index|
